@@ -15,7 +15,7 @@ To use the converter, import the sqlizer module, then set your API Key value. Yo
 ```python
 import sqlizer
 
-sqlizer.API_KEY = 'your-api-key'
+sqlizer.config.API_KEY = 'your-api-key'
 
 with open('example.xlsx', mode='rb') as file_content:
     converter = sqlizer.File(file_content, sqlizer.DatabaseType.MySQL, sqlizer.FileType.XLSX, 'example.xlsx', 'my_table')

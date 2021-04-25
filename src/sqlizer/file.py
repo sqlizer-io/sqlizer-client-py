@@ -2,11 +2,10 @@ import requests
 from datetime import datetime
 from time import sleep
 
+from . import config
 from .conversionstatus import ConversionStatus
 from .propertynames import PropertyNames
 from .apiurls import ApiUrls
-
-API_KEY = None
 
 
 class File:
@@ -97,8 +96,8 @@ class File:
         return self._message
 
     def _get_headers(self):
-        if API_KEY is not None:
-            return {'Authorization': 'Bearer %s' % API_KEY}
+        if config.API_KEY is not None:
+            return {'Authorization': 'Bearer %s' % config.API_KEY}
 
     def _get_post_data(self):
         return {
