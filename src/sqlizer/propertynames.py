@@ -1,0 +1,18 @@
+
+class PropertyNames:
+    ID = 'ID'
+    Status = 'Status'
+    FileType = 'FileType'
+    FileName = 'FileName'
+    TableName = 'TableName'
+    DatabaseType = 'DatabaseType'
+    FileHasHeaders = 'FileHasHeaders'
+    Delimiter = 'Delimiter'
+    SheetName = 'SheetName'
+    CellRange = 'CellRange'
+    CheckTableExists = 'CheckTableExists'
+    InsertSpacing = 'InsertSpacing'
+    PercentComplete = 'PercentComplete'
+    ResultUrl = 'ResultUrl'
+    ResultRows = 'ResultRows'
+    Message = 'Message'
